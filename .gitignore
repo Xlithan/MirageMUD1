@@ -1,13 +1,68 @@
-# Visual Studio
-.vs/
-*.user
+##############################
+# Visual Studio / .NET ignore
+##############################
+
+# User-specific files
 *.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Build outputs
-bin/
-obj/
+# Visual Studio working folder
+.vs/
 
-# Others
-*.log
-*.tmp
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]est[Rr]esult*/
+[Rr]elease*/
+[Dd]ebug*/
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
 *.cache
+*.mdb
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Rider/Resharper
+.idea/
+*.DotSettings.user
+
+# Dotnet tools
+.dotnet/
+
+##############################
+# OS / Misc
+##############################
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Logs / Dumps
+*.log
+*.dmp
+
+##############################
+# MirageMUD Specific
+##############################
+
+# Config files written at runtime
+*.config.json
+logs/
