@@ -1,0 +1,955 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding Projects\\C#\\MirageMUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\networking\\packetreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\packetreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\networking\\packetwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\packetwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\networking\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\config\\serverconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\config\\serverconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\utilities\\serverlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\utilities\\serverlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\config\\clientconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\config\\clientconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\security\\cryptoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\security\\cryptoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\game\\serverglobals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\game\\serverglobals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\game\\servergamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\game\\servergamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\networking\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\networking\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\networking\\serverloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\networking\\serverloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\networking\\servertcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\networking\\servertcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud\\server\\forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\game\\editors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\game\\editors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\game\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\game\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\game\\clientgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\game\\clientgamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\services\\musicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\services\\musicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\services\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\services\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\services\\graphicsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\services\\graphicsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\sendgetdataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\sendgetdataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\sprform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\sprform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\indexform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\indexform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\getdataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\getdataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\fixitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\fixitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\debugform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\debugform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\dropform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\dropform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\tradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\tradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\trainingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\trainingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\spelleditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\spelleditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\shopeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\shopeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\npceditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\npceditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\mapeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\mapeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\itemeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\itemeditorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\gameform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\models\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\models\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\global\\gameglobals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\global\\gameglobals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\utilities\\vbcompat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\utilities\\vbcompat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\utilities\\jsonconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\utilities\\jsonconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\networking\\networkmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\networkmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\networking\\packettypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\packettypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\networking\\buffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\buffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\models\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\models\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\constants\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\constants\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\models\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\models\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\models\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\models\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\enums\\gameenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\enums\\gameenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud\\shared\\shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|d:\\coding projects\\c#\\miragemud\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D975A73F-7C13-4551-B41B-3C13D1379AC3}|Client\\Client.csproj|solutionrelative:client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:49:01.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServerConfig.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Config\\ServerConfig.cs",
+              "RelativeDocumentMoniker": "Server\\Config\\ServerConfig.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Config\\ServerConfig.cs",
+              "RelativeToolTip": "Server\\Config\\ServerConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:48:25.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServerLogService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Utilities\\ServerLogService.cs",
+              "RelativeDocumentMoniker": "Server\\Utilities\\ServerLogService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Utilities\\ServerLogService.cs",
+              "RelativeToolTip": "Server\\Utilities\\ServerLogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:48:09.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientConfig.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Config\\ClientConfig.cs",
+              "RelativeDocumentMoniker": "Client\\Config\\ClientConfig.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Config\\ClientConfig.cs",
+              "RelativeToolTip": "Client\\Config\\ClientConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:47:34.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CryptoService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Security\\CryptoService.cs",
+              "RelativeDocumentMoniker": "Shared\\Security\\CryptoService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Security\\CryptoService.cs",
+              "RelativeToolTip": "Shared\\Security\\CryptoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:46:31.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PacketWriter.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\PacketWriter.cs",
+              "RelativeDocumentMoniker": "Shared\\Networking\\PacketWriter.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\PacketWriter.cs",
+              "RelativeToolTip": "Shared\\Networking\\PacketWriter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:46:03.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PacketReader.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\PacketReader.cs",
+              "RelativeDocumentMoniker": "Shared\\Networking\\PacketReader.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\PacketReader.cs",
+              "RelativeToolTip": "Shared\\Networking\\PacketReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:45:56.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\Packet.cs",
+              "RelativeDocumentMoniker": "Shared\\Networking\\Packet.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\Packet.cs",
+              "RelativeToolTip": "Shared\\Networking\\Packet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:45:41.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Database\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Server\\Database\\DatabaseService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Database\\DatabaseService.cs",
+              "RelativeToolTip": "Server\\Database\\DatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:39:40.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServerGlobals.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Game\\ServerGlobals.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\ServerGlobals.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Game\\ServerGlobals.cs",
+              "RelativeToolTip": "Server\\Game\\ServerGlobals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:39:24.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServerGameLogic.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Game\\ServerGameLogic.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\ServerGameLogic.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Game\\ServerGameLogic.cs",
+              "RelativeToolTip": "Server\\Game\\ServerGameLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:39:14.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataHandler.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Networking\\DataHandler.cs",
+              "RelativeDocumentMoniker": "Server\\Networking\\DataHandler.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Networking\\DataHandler.cs",
+              "RelativeToolTip": "Server\\Networking\\DataHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:39:00.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServerLoop.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Networking\\ServerLoop.cs",
+              "RelativeDocumentMoniker": "Server\\Networking\\ServerLoop.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Networking\\ServerLoop.cs",
+              "RelativeToolTip": "Server\\Networking\\ServerLoop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:38:49.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServerTcp.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Networking\\ServerTcp.cs",
+              "RelativeDocumentMoniker": "Server\\Networking\\ServerTcp.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Networking\\ServerTcp.cs",
+              "RelativeToolTip": "Server\\Networking\\ServerTcp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:38:40.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServerForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Forms\\ServerForm.cs",
+              "RelativeDocumentMoniker": "Server\\Forms\\ServerForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Server\\Forms\\ServerForm.cs [Design]",
+              "RelativeToolTip": "Server\\Forms\\ServerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:38:23.63Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Editors.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Game\\Editors.cs",
+              "RelativeDocumentMoniker": "Client\\Game\\Editors.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Game\\Editors.cs",
+              "RelativeToolTip": "Client\\Game\\Editors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:31:23.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DataHandler.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Game\\DataHandler.cs",
+              "RelativeDocumentMoniker": "Client\\Game\\DataHandler.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Game\\DataHandler.cs",
+              "RelativeToolTip": "Client\\Game\\DataHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:31:13.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClientGameLogic.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Game\\ClientGameLogic.cs",
+              "RelativeDocumentMoniker": "Client\\Game\\ClientGameLogic.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Game\\ClientGameLogic.cs",
+              "RelativeToolTip": "Client\\Game\\ClientGameLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:31:04.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MusicService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\MusicService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\MusicService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\MusicService.cs",
+              "RelativeToolTip": "Client\\Services\\MusicService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:30:42.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\MenuService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\MenuService.cs",
+              "RelativeToolTip": "Client\\Services\\MenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:30:31.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InputService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\InputService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\InputService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\InputService.cs",
+              "RelativeToolTip": "Client\\Services\\InputService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:30:21.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:27:15.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GraphicsService.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\GraphicsService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\GraphicsService.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Services\\GraphicsService.cs",
+              "RelativeToolTip": "Client\\Services\\GraphicsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:27:01.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SendGetDataForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\SendGetDataForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\SendGetDataForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\SendGetDataForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\SendGetDataForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:26:41.6Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SprForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\SprForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\SprForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\SprForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\SprForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:26:30.149Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IndexForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\IndexForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\IndexForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\IndexForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\IndexForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:26:18.871Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetDataForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\GetDataForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\GetDataForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\GetDataForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\GetDataForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:26:08.086Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FixItemForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\FixItemForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\FixItemForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\FixItemForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\FixItemForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:25:55.209Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DebugForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\DebugForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\DebugForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\DebugForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\DebugForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:25:40.413Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DropForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\DropForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\DropForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\DropForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\DropForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:25:29.312Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TradeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\TradeForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\TradeForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\TradeForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\TradeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:25:13.47Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TrainingForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\TrainingForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\TrainingForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\TrainingForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\TrainingForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:24:56.958Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SpellEditorForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\SpellEditorForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\SpellEditorForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\SpellEditorForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\SpellEditorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:24:43.106Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ShopEditorForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\ShopEditorForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\ShopEditorForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\ShopEditorForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\ShopEditorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:24:29.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NpcEditorForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\NpcEditorForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\NpcEditorForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\NpcEditorForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\NpcEditorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:24:13.647Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MapEditorForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\MapEditorForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\MapEditorForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\MapEditorForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\MapEditorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:23:56.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ItemEditorForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\ItemEditorForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\ItemEditorForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\ItemEditorForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\ItemEditorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:23:43.982Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GameForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\GameForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\GameForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\GameForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\GameForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:20:40.692Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "MainMenuForm.cs [Design]",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\MainMenuForm.cs",
+              "RelativeDocumentMoniker": "Client\\Forms\\MainMenuForm.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Forms\\MainMenuForm.cs [Design]",
+              "RelativeToolTip": "Client\\Forms\\MainMenuForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:20:29.225Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Client",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Client.csproj",
+              "RelativeDocumentMoniker": "Client\\Client.csproj",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Client\\Client.csproj",
+              "RelativeToolTip": "Client\\Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-20T03:13:30.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Shop.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Shop.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Shop.cs",
+              "RelativeToolTip": "Shared\\Models\\Shop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:19:20.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "GameGlobals.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Global\\GameGlobals.cs",
+              "RelativeDocumentMoniker": "Shared\\Global\\GameGlobals.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Global\\GameGlobals.cs",
+              "RelativeToolTip": "Shared\\Global\\GameGlobals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:18:07.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "VBCompat.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Utilities\\VBCompat.cs",
+              "RelativeDocumentMoniker": "Shared\\Utilities\\VBCompat.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Utilities\\VBCompat.cs",
+              "RelativeToolTip": "Shared\\Utilities\\VBCompat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:17:36.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "JsonConfig.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Utilities\\JsonConfig.cs",
+              "RelativeDocumentMoniker": "Shared\\Utilities\\JsonConfig.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Utilities\\JsonConfig.cs",
+              "RelativeToolTip": "Shared\\Utilities\\JsonConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:17:29.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "NetworkMessage.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\NetworkMessage.cs",
+              "RelativeDocumentMoniker": "Shared\\Networking\\NetworkMessage.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\NetworkMessage.cs",
+              "RelativeToolTip": "Shared\\Networking\\NetworkMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:17:03.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Utilities\\Logger.cs",
+              "RelativeDocumentMoniker": "Shared\\Utilities\\Logger.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Utilities\\Logger.cs",
+              "RelativeToolTip": "Shared\\Utilities\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:15:51.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PacketTypes.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\PacketTypes.cs",
+              "RelativeDocumentMoniker": "Shared\\Networking\\PacketTypes.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\PacketTypes.cs",
+              "RelativeToolTip": "Shared\\Networking\\PacketTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:15:11.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Buffer.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\Buffer.cs",
+              "RelativeDocumentMoniker": "Shared\\Networking\\Buffer.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Networking\\Buffer.cs",
+              "RelativeToolTip": "Shared\\Networking\\Buffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:15:05.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Spell.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Spell.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Spell.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Spell.cs",
+              "RelativeToolTip": "Shared\\Models\\Spell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:55.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NPC.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\NPC.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\NPC.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\NPC.cs",
+              "RelativeToolTip": "Shared\\Models\\NPC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:48.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Map.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Map.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Map.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Map.cs",
+              "RelativeToolTip": "Shared\\Models\\Map.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:39.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Character.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Character.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Character.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Character.cs",
+              "RelativeToolTip": "Shared\\Models\\Character.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:34.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Shared\\Models\\Item.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Models\\Item.cs",
+              "RelativeToolTip": "Shared\\Models\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:28.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "GameEnums.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Enums\\GameEnums.cs",
+              "RelativeDocumentMoniker": "Shared\\Enums\\GameEnums.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Enums\\GameEnums.cs",
+              "RelativeToolTip": "Shared\\Enums\\GameEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:18.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Constants\\GameConstants.cs",
+              "RelativeDocumentMoniker": "Shared\\Constants\\GameConstants.cs",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Constants\\GameConstants.cs",
+              "RelativeToolTip": "Shared\\Constants\\GameConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:14:09.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Shared",
+              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Shared.csproj",
+              "RelativeDocumentMoniker": "Shared\\Shared.csproj",
+              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD\\Shared\\Shared.csproj",
+              "RelativeToolTip": "Shared\\Shared.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-20T03:13:32.849Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

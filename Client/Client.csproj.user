@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Forms\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FixItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\GetDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\IndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ItemEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MapEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\NpcEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SendGetDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ShopEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SpellEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SprForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\TradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\TrainingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
