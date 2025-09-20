@@ -1,17 +1,20 @@
-namespace Server
+using MirageMUD.Server.Config;
+using MirageMUD.Server.Networking;
+
+class Program
 {
-    internal static class Program
+    static async Task Main()
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        var config = new ServerConfig
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Forms.ServerForm());
-        }
+            ListenIp = "127.0.0.1",
+            Port = 5000
+        };
+
+        var server = new ServerTcp(config);
+        server.Start();
+
+        Console.WriteLine("[Server] Running. Press Enter to exit...");
+        await Task.Run(Console.ReadLine); // Keeps app alive until Enter is pressed
     }
 }

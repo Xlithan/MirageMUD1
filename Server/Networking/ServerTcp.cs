@@ -14,6 +14,7 @@ namespace MirageMUD.Server.Networking
 
         public ServerTcp(ServerConfig config)
         {
+            _instance = this;
             var ip = IPAddress.Parse(config.ListenIp);
             _listener = new TcpListener(ip, config.Port);
         }
@@ -36,7 +37,7 @@ namespace MirageMUD.Server.Networking
                 if (_clients.TryAdd(clientId, conn))
                 {
                     Console.WriteLine($"[ServerTcp] Client {clientId} connected from {tcpClient.Client.RemoteEndPoint}");
-                    conn.StartReceiveLoop(RemoveClient);
+                    conn.StartReceiveLoop(this, RemoveClient);
                 }
             }
         }
@@ -48,9 +49,15 @@ namespace MirageMUD.Server.Networking
                 Console.WriteLine($"[ServerTcp] Client {id} disconnected");
             }
         }
+
+        public bool TryGetClient(int id, out ClientConnection? conn)
+        {
+            return _clients.TryGetValue(id, out conn);
+        }
+        private static ServerTcp? _instance;
     }
 
-    internal sealed class ClientConnection
+    public sealed class ClientConnection
     {
         private readonly TcpClient _tcpClient;
         private readonly NetworkStream _stream;
@@ -65,7 +72,15 @@ namespace MirageMUD.Server.Networking
             _stream = client.GetStream();
         }
 
-        public void StartReceiveLoop(Action<int> onDisconnect)
+        public async Task SendAsync(int packetId, Action<PacketWriter> buildPacket)
+        {
+            using var writer = new PacketWriter(packetId);
+            buildPacket(writer);
+            var data = writer.ToArray();
+            await _stream.WriteAsync(data, 0, data.Length);
+        }
+
+        public void StartReceiveLoop(ServerTcp server, Action<int> onDisconnect)
         {
             _ = Task.Run(async () =>
             {
@@ -84,8 +99,7 @@ namespace MirageMUD.Server.Networking
                         {
                             var raw = _buffer.PopPacket();
                             using var reader = new PacketReader(raw);
-                            Console.WriteLine($"[ServerTcp] Received packet {reader.Id} from client {Id}");
-                            // TODO: hand off to DataHandler
+                            await DataHandler.Handle(Id, reader, server);
                         }
                     }
                 }

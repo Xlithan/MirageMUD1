@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MirageMUD.Server.Networking;
+using MirageMUD.Shared.Networking;
+using System;
 using System.Threading.Tasks;
 
-namespace Server.Game
+namespace MirageMUD.Server.Game
 {
-    internal class ServerGameLogic
+    public static class ServerGameLogic
     {
+        public static async Task SendSync(ClientConnection conn)
+        {
+            await conn.SendAsync((int)ServerPacketId.SSync, writer =>
+            {
+                writer.Write("Hello from server");
+            });
+        }
     }
 }
