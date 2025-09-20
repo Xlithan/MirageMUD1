@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\Coding Projects\\C#\\MirageMUD1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|d:\\coding projects\\c#\\miragemud1\\shared\\networking\\buffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73DEF398-C6F5-457A-8C5A-B6974C2C94AD}|Shared\\Shared.csproj|solutionrelative:shared\\networking\\buffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|d:\\coding projects\\c#\\miragemud1\\server\\config\\serverconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAAB8B16-2DC6-48EF-927B-B94E36FB6033}|Server\\Server.csproj|solutionrelative:server\\config\\serverconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,19 +35,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Buffer.cs",
-              "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD1\\Shared\\Networking\\Buffer.cs",
-              "RelativeDocumentMoniker": "Shared\\Networking\\Buffer.cs",
-              "ToolTip": "D:\\Coding Projects\\C#\\MirageMUD1\\Shared\\Networking\\Buffer.cs",
-              "RelativeToolTip": "Shared\\Networking\\Buffer.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAkwFQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T04:22:02.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ServerConfig.cs",
               "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD1\\Server\\Config\\ServerConfig.cs",
               "RelativeDocumentMoniker": "Server\\Config\\ServerConfig.cs",
@@ -64,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ClientConfig.cs",
               "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD1\\Client\\Config\\ClientConfig.cs",
               "RelativeDocumentMoniker": "Client\\Config\\ClientConfig.cs",
@@ -77,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "JsonConfig.cs",
               "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD1\\Shared\\Utilities\\JsonConfig.cs",
               "RelativeDocumentMoniker": "Shared\\Utilities\\JsonConfig.cs",
@@ -90,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "CryptoService.cs",
               "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD1\\Shared\\Security\\CryptoService.cs",
               "RelativeDocumentMoniker": "Shared\\Security\\CryptoService.cs",
@@ -103,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PacketTypes.cs",
               "DocumentMoniker": "D:\\Coding Projects\\C#\\MirageMUD1\\Shared\\Networking\\PacketTypes.cs",
               "RelativeDocumentMoniker": "Shared\\Networking\\PacketTypes.cs",
