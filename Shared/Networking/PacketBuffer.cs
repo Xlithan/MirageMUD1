@@ -7,7 +7,7 @@ namespace MirageMUD.Shared.Networking
     /// <summary>
     /// Handles assembling full packets from a TCP stream.
     /// </summary>
-    public sealed class Buffer
+    public sealed class PacketBuffer
     {
         private readonly MemoryStream _stream = new();
         private readonly Queue<byte[]> _completedPackets = new();
