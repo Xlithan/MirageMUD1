@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Server.Config;
+using Shared.Networking;
+using System;
 using System.Collections.Concurrent;
 using System.Net;
 using System.Net.Sockets;
-using Server.Config;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Shared.Networking;
 
 namespace Server.Networking
 {
@@ -113,20 +114,8 @@ namespace Server.Networking
                         using var reader = new PacketReader(packetBytes);
                         var pid = (ClientPacketId)reader.Id;
 
-                        // For CLogin we send JSON as a string; forward it as UTF8 bytes for the DataHandler.
-                        ReadOnlyMemory<byte> payloadMem;
-                        if (pid == ClientPacketId.CLogin ||
-                            pid == ClientPacketId.CUseChar ||
-                            pid == ClientPacketId.CDelChar)
-                        {
-                            string s = reader.ReadString();
-                            payloadMem = System.Text.Encoding.UTF8.GetBytes(s);
-                        }
-                        else
-                        {
-                            payloadMem = reader.ReadBytes(); // whatever you already had
-                        }
-
+                        // Forward raw payload to DataHandler
+                        var payloadMem = reader.ReadRemaining();
                         OnPacket?.Invoke(c.Id, pid, payloadMem);
                     }
                 }

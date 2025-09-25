@@ -6,6 +6,7 @@
 		<RuntimeIdentifiers>win-x64;linux-x64;osx-arm64</RuntimeIdentifiers>
 		<!-- optional for deterministic behavior -->
 		<InvariantGlobalization>true</InvariantGlobalization>
+		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 
 	<ItemGroup>

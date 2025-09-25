@@ -56,5 +56,37 @@ namespace Server.Game
                 Characters = chars
             };
         }
+        public Account? CreateAccount(string username, string email, string password, out string error)
+        {
+            error = "";
+
+            if (string.IsNullOrWhiteSpace(username) || username.Length < 3)
+            {
+                error = "Username must be at least 3 characters.";
+                return null;
+            }
+
+            // Keep email check simple unless you already have a validator
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains('@'))
+            {
+                error = "Please enter a valid email.";
+                return null;
+            }
+
+            if (string.IsNullOrEmpty(password) || password.Length < 5)
+            {
+                error = "Password must be at least 5 characters.";
+                return null;
+            }
+
+            if (!_accounts.IsAccountNameAvailable(username))
+            {
+                error = "That account already exists.";
+                return null;
+            }
+
+            var hash = PasswordHasher.Hash(password);
+            return _accounts.CreateAccount(username, email, hash);
+        }
     }
 }

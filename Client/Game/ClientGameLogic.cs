@@ -17,9 +17,12 @@ namespace Client.Game
 
         public static async Task SendLogin(NetworkClient client, string user, string pass, string ver = "dev")
         {
-            var dto = new LoginRequestDto { UsernameOrEmail = user, Password = pass, ClientVersion = ver };
-            var json = System.Text.Json.JsonSerializer.Serialize(dto);
-            await client.SendAsync((int)ClientPacketId.CLogin, w => w.Write(json)); // server: ReadString()
+            await client.SendAsync((int)ClientPacketId.CLogin, writer =>
+            {
+                writer.Write(user);
+                writer.Write(pass);
+                writer.Write(ver);
+            });
         }
 
         public static async Task UseCharacter(NetworkClient client, string characterId)
@@ -30,6 +33,16 @@ namespace Client.Game
         public static async Task DeleteCharacter(NetworkClient client, string characterId)
         {
             await client.SendAsync((int)ClientPacketId.CDelChar, w => w.Write(characterId)); // server: ReadString()
+        }
+
+        public static async Task SendNewAccount(NetworkClient client, string username, string email, string password)
+        {
+            await client.SendAsync((int)ClientPacketId.CNewAccount, writer =>
+            {
+                writer.Write(username);
+                writer.Write(email);
+                writer.Write(password);
+            });
         }
     }
 }

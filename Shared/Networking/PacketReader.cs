@@ -26,6 +26,11 @@ namespace Shared.Networking
         public bool ReadBool() => _reader.ReadBoolean();
         public byte ReadByte() => _reader.ReadByte();
         public byte[] ReadBytes() => _reader.ReadBytes(_reader.ReadInt32());
+        public byte[] ReadRemaining()
+        {
+            long remaining = _stream.Length - _stream.Position;
+            return _reader.ReadBytes((int)remaining);
+        }
 
         public void Dispose()
         {

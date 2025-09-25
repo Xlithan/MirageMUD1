@@ -1,10 +1,11 @@
-﻿using Server.Networking;
-using System.Text;
-using Server.Database;
-using Shared.Networking;
+﻿using Server.Database;
 using Server.Game;
+using Shared.Models;
+using Shared.Networking;
+using Shared.Security;
 using System;
-using System.Text.Json;
+using System.IO;
+using System.Text;
 
 namespace Server.Networking
 {
@@ -31,14 +32,27 @@ namespace Server.Networking
 
                 case ClientPacketId.CLogin:
                     {
-                        var req = System.Text.Json.JsonSerializer.Deserialize<LoginRequestDto>(payload)!;
+                        using var ms = new MemoryStream(payload.ToArray());
+                        using var br = new BinaryReader(ms, Encoding.UTF8);
+
+                        var usernameOrEmail = br.ReadString();
+                        var password = br.ReadString();
+                        var clientVersion = br.ReadString();
+
+                        var req = new LoginRequestDto
+                        {
+                            UsernameOrEmail = usernameOrEmail,
+                            Password = password,
+                            ClientVersion = clientVersion
+                        };
+
                         var res = _logic.HandleLogin(req);
 
                         _tcp.SendLoginOk(clientId, res.Success, res.Message ?? "", res.AccountId ?? "");
                         if (res.Success && res.AccountId is not null)
                         {
                             _tcp.SetAccount(clientId, res.AccountId);
-                            var chars = _logic.GetCharacters(res.AccountId);   // small helper we’ll add next
+                            var chars = _logic.GetCharacters(res.AccountId);
                             _tcp.SendAllChars(clientId, chars);
                         }
                         break;
@@ -46,7 +60,11 @@ namespace Server.Networking
 
                 case ClientPacketId.CUseChar:
                     {
-                        var charId = Encoding.UTF8.GetString(payload);
+                        using var ms = new MemoryStream(payload.ToArray());
+                        using var br = new BinaryReader(ms, Encoding.UTF8);
+
+                        var charId = br.ReadString();
+
                         if (!_tcp.TryGetAccount(clientId, out var accountId) || accountId is null)
                         {
                             _tcp.SendAlert(clientId, "Not logged in.");
@@ -60,15 +78,17 @@ namespace Server.Networking
                         }
 
                         _tcp.SetCharacter(clientId, charId);
-
-                        // Enter game (for now just signal SInGame; you’ll follow with player data next)
-                        _tcp.SendInGame(clientId);
+                        _tcp.SendInGame(clientId); // enter game
                         break;
                     }
 
                 case ClientPacketId.CDelChar:
                     {
-                        var charId = Encoding.UTF8.GetString(payload);
+                        using var ms = new MemoryStream(payload.ToArray());
+                        using var br = new BinaryReader(ms, Encoding.UTF8);
+
+                        var charId = br.ReadString();
+
                         if (!_tcp.TryGetAccount(clientId, out var accountId) || accountId is null)
                         {
                             _tcp.SendAlert(clientId, "Not logged in.");
@@ -82,7 +102,28 @@ namespace Server.Networking
                         }
 
                         var list = _logic.GetCharacters(accountId);
-                        _tcp.SendAllChars(clientId, list); // refresh list
+                        _tcp.SendAllChars(clientId, list);
+                        break;
+                    }
+
+                case ClientPacketId.CNewAccount:
+                    {
+                        using var ms = new MemoryStream(payload.ToArray());
+                        using var br = new BinaryReader(ms, Encoding.UTF8);
+
+                        var username = br.ReadString();
+                        var email = br.ReadString();
+                        var password = br.ReadString();
+
+                        var account = _logic.CreateAccount(username, email, password, out var error);
+                        if (account == null)
+                        {
+                            _tcp.SendAlert(clientId, error);
+                            break;
+                        }
+
+                        _tcp.SendLoginOk(clientId, true, "Account created.", account.Id);
+                        _tcp.SendAllChars(clientId, new List<CharacterSummary>());
                         break;
                     }
             }

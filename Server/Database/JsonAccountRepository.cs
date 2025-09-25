@@ -51,15 +51,28 @@ namespace Server.Database
             }).ToList();
         }
 
-        public Account CreateAccount(string email, string username, string passwordHash, bool emailVerified = true)
+        public bool IsAccountNameAvailable(string username)
         {
-            var row = new AccountRow(Guid.NewGuid().ToString("N"), email, username, passwordHash, emailVerified, DateTime.UtcNow);
-            lock (_sync)
-            {
-                var list = LoadAccounts();
-                list.Add(row);
-                SaveAccounts(list);
-            }
+            var list = LoadAccounts();
+            return !list.Any(a =>
+                a.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public Account? CreateAccount(string username, string email, string passwordHash)
+        {
+            var list = LoadAccounts();
+
+            // create row
+            var row = new AccountRow(
+                Guid.NewGuid().ToString(),
+                email,
+                username,
+                passwordHash,
+                true,
+                DateTime.UtcNow);
+
+            list.Add(row);
+            SaveAccounts(list);
 
             return new Account
             {

@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Client.Game;
+using Shared.Models;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Shared.Models;
 
 namespace Client.Forms
 {
@@ -151,6 +152,9 @@ namespace Client.Forms
             AddBack(lblGameOptionsCancel);
             AddNav(lblCharsCancel, MenuView.Main);          // characters back to main
             AddNav(lblNewCharCancel, MenuView.Characters);  // new-char back to chars
+
+            // --- New Account create button ---
+            AddAction(lblNewAccountConnect, async () => await RegisterNewAccountAsync());
 
             // --- Characters menu actions (wire now; logic later) ---
             AddNav(lblCharsNew, MenuView.NewCharacter);
@@ -368,6 +372,43 @@ namespace Client.Forms
             finally
             {
                 _loginBusy = false;
+            }
+        }
+
+        private async Task RegisterNewAccountAsync()
+        {
+            try
+            {
+                var username = txtNewAcctName.Text.Trim();
+                var email = txtNewAcctEmail.Text.Trim();
+                var password = txtNewAcctEmail.Text;
+
+                if (string.IsNullOrWhiteSpace(username) ||
+                    string.IsNullOrWhiteSpace(email) ||
+                    string.IsNullOrEmpty(password))
+                {
+                    MessageBox.Show(this, "All fields are required.", "Register",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                if (!_client.IsConnected)
+                {
+                    var ok = await _client.TryConnectAsync(_config);
+                    if (!ok)
+                    {
+                        ShowLoginError("Could not connect to server (offline).");
+                        return;
+                    }
+                }
+
+                await ClientGameLogic.SendNewAccount(_client, username, email, password);
+                // Server responds with SLoginOk + SAllChars → DataHandler shows Characters panel.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, $"Failed to register: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

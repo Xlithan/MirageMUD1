@@ -24,11 +24,11 @@ namespace Client.Forms
 
         // New Account controls
         private TextBox txtNewAcctName;
-        private TextBox txtNewAcctPassword;
+        private TextBox txtNewAcctEmail;
         private Label lblNewAccountTitle;
         private Label lblNewAccountInfo;
         private Label lblNewAccountName;
-        private Label lblNewAccountPassword;
+        private Label lblNewAccountEmail;
         private Label lblNewAccountConnect;
         private Label lblNewAccountCancel;
 
@@ -144,12 +144,14 @@ namespace Client.Forms
             lblMAGI = new Label();
             lblSPEED = new Label();
             mnuNewAccount = new Panel();
+            label1 = new Label();
+            txtNewAcctPassword = new TextBox();
             lblNewAccountTitle = new Label();
             lblNewAccountInfo = new Label();
             lblNewAccountName = new Label();
             txtNewAcctName = new TextBox();
-            lblNewAccountPassword = new Label();
-            txtNewAcctPassword = new TextBox();
+            lblNewAccountEmail = new Label();
+            txtNewAcctEmail = new TextBox();
             lblNewAccountConnect = new Label();
             lblNewAccountCancel = new Label();
             mnuChars = new Panel();
@@ -553,12 +555,14 @@ namespace Client.Forms
             // 
             mnuNewAccount.BackColor = Color.Black;
             mnuNewAccount.BackgroundImage = (Image)resources.GetObject("mnuNewAccount.BackgroundImage");
+            mnuNewAccount.Controls.Add(label1);
+            mnuNewAccount.Controls.Add(txtNewAcctPassword);
             mnuNewAccount.Controls.Add(lblNewAccountTitle);
             mnuNewAccount.Controls.Add(lblNewAccountInfo);
             mnuNewAccount.Controls.Add(lblNewAccountName);
             mnuNewAccount.Controls.Add(txtNewAcctName);
-            mnuNewAccount.Controls.Add(lblNewAccountPassword);
-            mnuNewAccount.Controls.Add(txtNewAcctPassword);
+            mnuNewAccount.Controls.Add(lblNewAccountEmail);
+            mnuNewAccount.Controls.Add(txtNewAcctEmail);
             mnuNewAccount.Controls.Add(lblNewAccountConnect);
             mnuNewAccount.Controls.Add(lblNewAccountCancel);
             mnuNewAccount.Location = new Point(0, 0);
@@ -566,6 +570,29 @@ namespace Client.Forms
             mnuNewAccount.Size = new Size(500, 300);
             mnuNewAccount.TabIndex = 9;
             mnuNewAccount.Visible = false;
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(208, 173);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 25);
+            label1.TabIndex = 9;
+            label1.Text = "Password :";
+            label1.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // txtNewAcctPassword
+            // 
+            txtNewAcctPassword.BackColor = Color.White;
+            txtNewAcctPassword.Font = new Font("Tahoma", 6.75F);
+            txtNewAcctPassword.ForeColor = Color.Black;
+            txtNewAcctPassword.Location = new Point(299, 177);
+            txtNewAcctPassword.MaxLength = 20;
+            txtNewAcctPassword.Name = "txtNewAcctPassword";
+            txtNewAcctPassword.PasswordChar = '•';
+            txtNewAcctPassword.Size = new Size(185, 18);
+            txtNewAcctPassword.TabIndex = 8;
             // 
             // lblNewAccountTitle
             // 
@@ -611,34 +638,33 @@ namespace Client.Forms
             txtNewAcctName.Size = new Size(185, 18);
             txtNewAcctName.TabIndex = 3;
             // 
-            // lblNewAccountPassword
+            // lblNewAccountEmail
             // 
-            lblNewAccountPassword.BackColor = Color.Transparent;
-            lblNewAccountPassword.ForeColor = Color.White;
-            lblNewAccountPassword.Location = new Point(208, 144);
-            lblNewAccountPassword.Name = "lblNewAccountPassword";
-            lblNewAccountPassword.Size = new Size(85, 25);
-            lblNewAccountPassword.TabIndex = 4;
-            lblNewAccountPassword.Text = "Password :";
-            lblNewAccountPassword.TextAlign = ContentAlignment.MiddleRight;
+            lblNewAccountEmail.BackColor = Color.Transparent;
+            lblNewAccountEmail.ForeColor = Color.White;
+            lblNewAccountEmail.Location = new Point(208, 144);
+            lblNewAccountEmail.Name = "lblNewAccountEmail";
+            lblNewAccountEmail.Size = new Size(85, 25);
+            lblNewAccountEmail.TabIndex = 4;
+            lblNewAccountEmail.Text = "Email :";
+            lblNewAccountEmail.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // txtNewAcctPassword
+            // txtNewAcctEmail
             // 
-            txtNewAcctPassword.BackColor = Color.White;
-            txtNewAcctPassword.Font = new Font("Tahoma", 6.75F);
-            txtNewAcctPassword.ForeColor = Color.Black;
-            txtNewAcctPassword.Location = new Point(299, 149);
-            txtNewAcctPassword.MaxLength = 20;
-            txtNewAcctPassword.Name = "txtNewAcctPassword";
-            txtNewAcctPassword.PasswordChar = '•';
-            txtNewAcctPassword.Size = new Size(185, 18);
-            txtNewAcctPassword.TabIndex = 5;
+            txtNewAcctEmail.BackColor = Color.White;
+            txtNewAcctEmail.Font = new Font("Tahoma", 6.75F);
+            txtNewAcctEmail.ForeColor = Color.Black;
+            txtNewAcctEmail.Location = new Point(299, 149);
+            txtNewAcctEmail.MaxLength = 20;
+            txtNewAcctEmail.Name = "txtNewAcctEmail";
+            txtNewAcctEmail.Size = new Size(185, 18);
+            txtNewAcctEmail.TabIndex = 5;
             // 
             // lblNewAccountConnect
             // 
             lblNewAccountConnect.BackColor = Color.Transparent;
             lblNewAccountConnect.ForeColor = Color.White;
-            lblNewAccountConnect.Location = new Point(311, 183);
+            lblNewAccountConnect.Location = new Point(311, 214);
             lblNewAccountConnect.Name = "lblNewAccountConnect";
             lblNewAccountConnect.Size = new Size(91, 19);
             lblNewAccountConnect.TabIndex = 6;
@@ -1218,5 +1244,7 @@ namespace Client.Forms
             mnuMainMenu.ResumeLayout(false);
             ResumeLayout(false);
         }
+        private Label label1;
+        private TextBox txtNewAcctPassword;
     }
 }
