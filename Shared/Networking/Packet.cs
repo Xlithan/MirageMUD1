@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MirageMUD.Shared.Networking
+namespace Shared.Networking
 {
     public class Packet
     {

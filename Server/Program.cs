@@ -1,20 +1,33 @@
-using MirageMUD.Server.Config;
-using MirageMUD.Server.Networking;
+using Server.Database;
+using Server.Game;
+using Server.Config;
+using Server.Networking;
+using Shared.Networking;
 
-class Program
+namespace Server
 {
-    static async Task Main()
+    public static class Program
     {
-        var config = new ServerConfig
+        public static void Main(string[] args)
         {
-            ListenIp = "127.0.0.1",
-            Port = 5000
-        };
+            var dataDir = Path.Combine(AppContext.BaseDirectory, "Data");
+            Directory.CreateDirectory(dataDir);
 
-        var server = new ServerTcp(config);
-        server.Start();
+            var repo = new JsonAccountRepository(dataDir);
+            var logic = new ServerGameLogic(repo);
+            var cfg = ServerConfig.Load();
+            var tcp = new ServerTcp(cfg);
+            var handler = new DataHandler(logic, tcp);
 
-        Console.WriteLine("[Server] Running. Press Enter to exit...");
-        await Task.Run(Console.ReadLine); // Keeps app alive until Enter is pressed
+            tcp.OnPacket += (id, pid, payload) =>
+            {
+                handler.HandlePacket(id, pid, payload.Span);
+            };
+
+            tcp.Start();
+            Console.WriteLine("[Server] Press Enter to quit...");
+            Console.ReadLine();
+            tcp.Stop();
+        }
     }
 }

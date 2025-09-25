@@ -1,11 +1,11 @@
-﻿using MirageMUD.Client.Config;
-using MirageMUD.Client.Game;
-using MirageMUD.Shared.Networking;
+﻿using Client.Config;
+using Client.Game;
+using Shared.Networking;
 using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace MirageMUD.Client.Services
+namespace Client.Services
 {
     public sealed class NetworkClient : IDisposable
     {
@@ -15,6 +15,22 @@ namespace MirageMUD.Client.Services
 
         public bool IsConnected => _tcpClient.Connected;
 
+        public async Task<bool> TryConnectAsync(ClientConfig config)
+        {
+            try
+            {
+                await ConnectAsync(config);   // your existing method
+                return true;
+            }
+            catch (SocketException)
+            {
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         public async Task ConnectAsync(ClientConfig config)
         {
             if (IsConnected) return;

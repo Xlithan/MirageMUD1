@@ -1,30 +1,34 @@
-using MirageMUD.Client.Config;
-using MirageMUD.Client.Game;
-using MirageMUD.Client.Services;
-using System.Runtime.InteropServices;
+using System;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Client.App;         // <-- for ClientUI.Attach
+using Client.Config;
+using Client.Forms;
+using Client.Services;
 
 class Program
 {
-    [DllImport("kernel32.dll")]
-    private static extern bool AllocConsole();
+	[STAThread]
+	static async Task Main()
+	{
+		var config = new ClientConfig
+		{
+			ServerHost = "127.0.0.1",
+			ServerPort = 5000
+		};
 
-    [STAThread]
-    static async Task Main()
-    {
-        AllocConsole(); // attach a console window
-        var config = new ClientConfig
-        {
-            ServerHost = "127.0.0.1",
-            ServerPort = 5000
-        };
+		var client = new NetworkClient();
+        _ = await client.TryConnectAsync(config);
 
-        var client = new NetworkClient();
-        await client.ConnectAsync(config);
+        Application.EnableVisualStyles();
+		Application.SetCompatibleTextRenderingDefault(false);
 
-        // Immediately send sync
-        await ClientGameLogic.SendSync(client);
+		var form = new MainMenuForm(client, config); // pass the client into the form
+		ClientUI.Attach(form);               // <-- so packet handler can call form helpers
 
-        Console.WriteLine("[Client] Press Enter to quit...");
-        await Task.Run(Console.ReadLine);
-    }
+		Application.Run(form);
+
+		// optional: clean shutdown
+		try { client.Dispose(); } catch { /* ignore */ }
+	}
 }

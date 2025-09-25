@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Client.Forms
 {
-    public partial class GetDataForm : Form
+    public partial class RoomEditorForm : Form
     {
-        public GetDataForm()
+        public RoomEditorForm()
         {
             InitializeComponent();
         }

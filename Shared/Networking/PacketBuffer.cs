@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace MirageMUD.Shared.Networking
+namespace Shared.Networking
 {
     /// <summary>
     /// Handles assembling full packets from a TCP stream.

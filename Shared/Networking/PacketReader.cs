@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace MirageMUD.Shared.Networking
+namespace Shared.Networking
 {
     public class PacketReader : IDisposable
     {

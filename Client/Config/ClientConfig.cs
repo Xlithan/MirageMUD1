@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using MirageMUD.Shared.Utilities;
+using Shared.Utilities;
 
-namespace MirageMUD.Client.Config
+namespace Client.Config
 {
     public sealed class ClientConfig
     {
         public string ServerHost { get; set; } = "127.0.0.1";
-        public int ServerPort { get; set; } = 7777;
+        public int ServerPort { get; set; } = 5000;
 
         public bool Fullscreen { get; set; } = false;
         public int MusicVolume { get; set; } = 70; // 0..100

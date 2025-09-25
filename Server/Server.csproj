@@ -1,14 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RuntimeIdentifiers>win-x64;linux-x64;osx-arm64</RuntimeIdentifiers>
+		<!-- optional for deterministic behavior -->
+		<InvariantGlobalization>true</InvariantGlobalization>
+	</PropertyGroup>
 
-  <PropertyGroup>
-	  <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\Shared.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<!-- ship JSON data with the server -->
+		<ProjectReference Include="..\Shared\Shared.csproj" />
+		<None Include="Data\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
 </Project>

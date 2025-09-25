@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using Client.Config;
+using Client.Game;
+using Client.Services;
+using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,9 +9,15 @@ namespace Client.Forms
 {
     public partial class MainMenuForm : Form
     {
-        public MainMenuForm()
+        private readonly NetworkClient _client;
+        private readonly ClientConfig _config;
+
+        public MainMenuForm(NetworkClient client, ClientConfig config)
         {
+            _client = client;
+            _config = config;
             InitializeComponent();
+            InitializeNavigation();
         }
     }
 }

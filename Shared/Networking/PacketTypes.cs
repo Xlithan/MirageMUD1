@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MirageMUD.Shared.Networking
+namespace Shared.Networking
 {
     public enum ServerPacketId
     {
@@ -61,7 +61,8 @@ namespace MirageMUD.Shared.Networking
         SSync = 55,
         SRoomRevs = 56,
         SNpcEditor = 57,
-        SUpdateNpc = 58
+        SUpdateNpc = 58,
+        SMSG_COUNT = 59
     }
 
     public enum ClientPacketId
